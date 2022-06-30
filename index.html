@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>あなたと相手の相性を占うゲマトリア〈ＧＥＭＡＴＲＩＡ〉占数術</title>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/app.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@700&family=Open+Sans:ital@1&family=Zen+Kaku+Gothic+Antique:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>ＧＥＭＡＴＲＩＡ</h1>
+    <h2>名前のアルファベットに隠された神秘数が予言する<br>あなたと相手の相性</h2>
+    <h3>シュメールに伝わるゲマトリアの秘密</h3>
+  </header>
+  <div class="container">
+    <form id="form">
+      <div class="lead">
+        <p>普段何気なく使っている文字には霊性があるーー。中国から伝わった感じの画数占いと同じように、西洋では長年に渡り、アルファベットによる数字占いで、聖書の本当の意味の解明が行われてきました。</p>
+        <p>あなたの性格と２人の相性をズバリ当ててしまうーー。ＧＥＭＡＴＲＩＡ〈ゲマトリア〉占数術の秘術の公開です。</p>
+        <p class="about"><a href="about.html">ＧＥＭＡＴＲＩＡ〈ゲマトリア〉とは？</a></p>
+        <p>以下にあなたの名前と相手の名前を入力し「相性を調べる」ボタンをクリックしてください。</p>
+      </div>
+      <div id="nameSelf" class="form-group">
+        <label for="firstName1">あなたの名前（アルファベット）</label>
+        <input type="text" id="firstName1" name="firstName1" placeholder="ファースト・ネーム" class="form-input">
+        <input type="text" id="lastName1" name="lastName1" placeholder="姓" class="form-input">
+      </div>
+      <div id="namePartner" class="form-group">
+        <label for="firstName2">相手の名前（アルファベット）</label>
+        <input type="text" id="firstName2" name="firstName2" placeholder="ファースト・ネーム" class="form-input">
+        <input type="text" id="lastName2" name="lastName2" placeholder="姓" class="form-input">
+      </div>
+      <div id="description">
+        <p>注意：<br>
+          パスポートにサインするようにファースト・ネームを先に書くようにしてください。<br>
+          また、伊藤さんなどの場合、普通「ITO」と表記しますが、自分が普段「ITOH」と書くと決めているときは、
+          それに従って構いません。</p>
+      </div>
+      <div id="submission">
+        <span id="submit">相性を調べる</span>
+      </div>
+    </form>
+    <div id="result">
+    </div>
+  </div>
+</body>
+</html>
